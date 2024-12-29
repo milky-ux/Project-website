@@ -1,0 +1,118 @@
+body{
+    overflow-x: hidden;
+}
+
+.carousel-inner .carousel-item img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-inner .carousel-caption {
+    padding-bottom: 250px;
+    text-align: left;
+    text-wrap: none;
+    left: 100px;
+}
+.carousel-inner .carousel-caption h1 {
+    font-size: 100px;
+}
+.carousel-inner .carousel-caption h4{
+    font-size: 40px;
+
+}
+
+.carousel-indicators {
+    align-items: center;
+    margin-left: 1100px;
+}
+.hero h1 {
+    font-size: 70px;
+}
+
+.navbar {
+    position: absolute;
+}
+
+.review {
+    background-color: #656b72;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.hero1 {
+    background-image: url(assets/Group\ 22.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero1 h1 {
+    font-size: 90px;
+}
+
+.hero5 {
+    background-image: url(assets/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero5 h1 {
+    font-size: 90px;
+}
+
+.hero6 {
+    background-image: url(assets/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero6 h1 {
+    font-size: 80px;
+}
+
+.hero7 {
+    background-image: url(assets/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero7 h1 {
+    font-size: 80px;
+}
+
+.form-group {
+    background-color: #656b72;
+}
+
+.footer {
+    min-height: 60vh;
+    background-color: #15181f;
+    margin-top: 150px;
+}
+
+@media screen and (min-widht: 320px){
+
+}
+@media screen and (min-widht: 768px){
+}
+@media screen and (min-widht: 1024px){
+
+}
+@media screen and (min-widht: 1200px){
+
+}

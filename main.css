@@ -2,6 +2,32 @@ body{
     overflow-x: hidden;
 }
 
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: #fff;
+    transition: width 0.4s;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+
+}
+
 .carousel-inner .carousel-item img {
     background-size: cover;
     background-position: center;
@@ -11,17 +37,16 @@ body{
 }
 
 .carousel-inner .carousel-caption {
-    padding-bottom: 250px;
+    padding-bottom: 200px;
     text-align: left;
     text-wrap: none;
     left: 100px;
 }
 .carousel-inner .carousel-caption h1 {
-    font-size: 100px;
+    font-size: 8vw;
 }
 .carousel-inner .carousel-caption h4{
-    font-size: 40px;
-
+    font-size: 3vw;
 }
 
 .carousel-indicators {
@@ -36,6 +61,12 @@ body{
     position: absolute;
 }
 
+.container .row .col hr {
+    height: 5rem;
+    border-width: 7px;
+    color: #AE9D06;
+    padding: 1rem;
+}
 .review {
     background-color: #656b72;
     padding: 30px;
@@ -55,6 +86,72 @@ body{
 .hero1 h1 {
     font-size: 90px;
 }
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.text-slide h3 {
+    position: relative;
+    text-wrap: none;
+    text-align: center;
+}
+
+.slider {
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+    font-size: 0;
+    justify-content: center;
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    width: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%; 
+}
+
+span.next, span.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: #15181f;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+span.next {
+    right: 20px;
+}
+
+span.prev {
+    left: 20px;
+}
+
+span.next:hover, span.prev:hover {
+    background-color: #ede6d6;
+    opacity: 0.8;
+    color: #222 ;
+}
+
 
 .hero5 {
     background-image: url(assets/background1.png);
@@ -106,9 +203,21 @@ body{
 }
 
 @media screen and (min-widht: 320px){
+    .carousel-inner .carousel-caption h1 {
+        font-size: 50px;
+    }
+    .carousel-inner .carousel-caption h4{
+        font-size: 20px;
+    }
 
 }
 @media screen and (min-widht: 768px){
+    .carousel-inner .carousel-caption h1 {
+        font-size: 70px;
+    }
+    .carousel-inner .carousel-caption h4{
+        font-size: 25px;
+    }
 }
 @media screen and (min-widht: 1024px){
 
